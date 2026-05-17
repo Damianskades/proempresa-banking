@@ -1,14 +1,4 @@
 # 🏦 Financiera Proempresa — Home Banking
-
-## 📁 Estructura
-```
-proempresa-banking/
-  frontend/   → React + Tailwind + Supabase
-  backend/    → FastAPI
-```
-
----
-
 ## ⚙️ SUPABASE — Configuración (primero esto)
 
 1. Ir a https://supabase.com → crear proyecto gratis
@@ -24,15 +14,8 @@ proempresa-banking/
 
 ```bash
 cd proempresa-banking/frontend
-
-# 1. Copiar variables de entorno
 cp .env.example .env
-# Editar .env con tus claves de Supabase
-
-# 2. Instalar dependencias
 npm install
-
-# 3. Ejecutar
 npm run dev
 # Abre: http://localhost:3000
 ```
@@ -58,14 +41,3 @@ uvicorn main:app --reload --port 8000
 VITE_SUPABASE_URL=https://xxxx.supabase.co
 VITE_SUPABASE_ANON_KEY=eyJ...
 ```
-
----
-
-## ✅ Flujo evaluado
-
-| Paso | Ruta |
-|------|------|
-| Home + branding | `/` |
-| Banca por Internet | `/banca` |
-| Login | `/login` |
-| Dashboard | `/dashboard` |
